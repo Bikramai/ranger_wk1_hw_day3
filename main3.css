@@ -1,0 +1,70 @@
+.container {
+    justify-content: stretch;
+    display: grid; background-color: black;
+    grid-auto-columns: 1fr 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1.1fr 0.7fr 0.9fr 0.7fr 0.5fr 1.3fr 1.3fr 1.3fr 1fr 1fr; 
+    gap: 2% 10px; 
+  }
+  .Griot-Theater { grid-area: 1 / 1 / 2 / 2; color: #eee;}
+  .nav-bar {
+    display: grid; 
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; 
+    grid-template-rows: 0.5fr 0.7fr 0.3fr; 
+    gap: 0px 0px; font-size: x-large;
+    grid-template-areas: 
+      ". . . . . ."
+      "Home Features Our-Actors Mission Contact ."
+      ". . . . . ."; 
+    grid-area: 1 / 2 / 2 / 6; 
+  }
+  .Home { grid-area: Home; }
+  .Features { grid-area: Features; }
+  .Our-Actors { grid-area: Our-Actors; }
+  .Mission { grid-area: Mission; }
+  .Contact { grid-area: Contact; }
+  .date-bar { grid-area: 5 / 2 / 6 / 5;color:#eee; }
+  .img1 { grid-area: 6 / 2 / 7 / 3; color: #eee; }
+  .img2 { grid-area: 7 / 2 / 8 / 3; color: #eee;}
+  .img3 { grid-area: 8 / 2 / 9 / 3; color: #eee;}
+  .show-info1 { grid-area: 6 / 3 / 7 / 4; color: #eee;}
+  .show-info2 { grid-area: 7 / 3 / 8 / 4; color: #eee;}
+  .show-info3 { grid-area: 8 / 3 / 9 / 4; color: #eee;}
+  .show-btn1 { grid-area: 6 / 4 / 7 / 5; color: #eee; font-size: x-large;
+    border-radius: 20%;text-align: center;align-self: ;}
+  .show-btn2 { grid-area: 7 / 4 / 8 / 5;color: #eee; font-size: x-large;
+    border-radius: 20%;text-align: center; }
+  .show-btn3 { grid-area: 8 / 4 / 9 / 5;color: #eee; font-size: x-large;
+    border-radius: 20%;text-align: center; }
+  .footer-bar {
+    display: grid; 
+    grid-template-columns: 1.9fr 0.9fr 0.9fr 0.9fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 1px 4px; 
+    grid-template-areas: 
+      "map-bar info-bar shows-bar social-bar"
+      "map-bar info-bar shows-bar social-bar"
+      "map-bar info-bar shows-bar social-bar"; 
+    grid-area: 9 / 1 / 11 / 6; 
+  }
+  .map-bar { grid-area: map-bar; }
+  .info-bar { grid-area: info-bar;color: #eee; }
+  .shows-bar { grid-area: shows-bar; color: #eee;}
+  .social-bar { grid-area: social-bar; color: #eee;}
+  .background-img- { grid-area: 2 / 1 / 5 / 6; background-image: url(theater-image-background-2.png);
+    background-position: center; background-size:cover;height: 800px; width: auto;}
+  .featured-shows { grid-area: 3 / 2 / 4 / 5; text-align:center;font-size: 70px;color: #eee;}
+
+  a{
+    color: #eee;
+  }
+  a:hover {
+    color: tomato;
+  }
+
+.info-bar:hover,.shows-bar:hover, .social-bar:hover, .featured-shows:hover,
+.show-btn1:hover, .show-btn2:hover, .show-btn3:hover, .Griot-Theater:hover, .date-bar:hover {
+    color: tomato;
+  }
+
